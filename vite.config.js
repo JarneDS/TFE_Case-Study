@@ -11,6 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'src/index.html'),
+        credits: resolve(__dirname, 'src/credits.html')
       }
     }
   },
