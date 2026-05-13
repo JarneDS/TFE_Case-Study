@@ -180,12 +180,6 @@ ul {
         padding: 40px;
     }
 
-    .credits {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 20px;
-    }
-
     img {
         width: auto;
         height: auto;
@@ -218,6 +212,18 @@ ul {
         position: static;
         width: fit-content;
         transform: translateX(0);
+    }
+
+    .row--center {
+        align-self: center;
+    }
+}
+
+@media (min-width: 1250px) {
+    .credits {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 20px;
     }
 
     /* GRID */
@@ -255,10 +261,6 @@ ul {
 
     .col--center {
         justify-self: center;
-    }
-
-    .row--center {
-        align-self: center;
     }
 
     .col--end {
