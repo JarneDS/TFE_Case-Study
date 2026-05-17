@@ -211,7 +211,7 @@ header {
     background: var(--color-primary);
     padding: 10px 0;
     overflow: hidden;
-    transition: width .3s ease;
+    transition: width .3s ease-in-out;
     z-index: 100;
     border-radius: 5px 0 0 5px;
 }
