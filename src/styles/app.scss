@@ -130,6 +130,25 @@ ul {
     background-position: center;
 }
 
+.section__btnRetour {
+    margin-top: 50px;
+}
+
+
+.btnRetour {
+    background-color: var(--color-primary);
+    color: var(--color-text-btn);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btnRetour:hover {
+    background-color: var(--color-secondary);
+}
+
 /* NAV */
 .menu {
     background-color: var(--color-bg);
@@ -323,6 +342,10 @@ footer {
         height: auto;
         max-width: 300px;
         max-height: 200px;
+    }
+
+    .btnRetour {
+        margin: 0;
     }
 
     /* NAV */
