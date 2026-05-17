@@ -184,9 +184,8 @@ header {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .header__img {
@@ -201,6 +200,34 @@ header {
 .header__h1 {
     position: relative;
     z-index: 5;
+    padding: 0 40px;
+    text-align: center;
+    margin-bottom: 0;
+    align-self: end;
+}
+
+.header__scroll {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: end;
+    margin-bottom: 30px;
+}
+
+.header__scroll p, .header__scroll span {
+    margin: 0;
+}
+
+.headerScroll__img {
+    display: flex;
+    flex-direction: row;
+}
+
+.scrollTire, .scrollArrow {
+    width: 50px;
+    height: 50px;
 }
 
 /* SIDENAV */
