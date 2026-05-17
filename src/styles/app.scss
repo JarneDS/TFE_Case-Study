@@ -38,10 +38,6 @@ section {
     scroll-margin-top: 50px;
 }
 
-.section__btnRetour, .accueil {
-    margin-top: 50px;
-}
-
 h1 {
     font-size: clamp(3.563rem, 0.432vw + 3.481rem, 4rem);
     margin: 0 0 46px;
@@ -98,7 +94,7 @@ ul {
     list-style-type: disc;
 }
 
-#accueil, #credits {
+#accueilPage, #credits {
     background: url(../assets/bg.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -107,18 +103,31 @@ ul {
     background-position: center;
 }
 
-.btnRetour {
-    background-color: var(--color-primary);
-    color: var(--color-text-btn);
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+#conceptPage {
+    background: url(../assets/bgConcept.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
 }
 
-.btnRetour:hover {
-    background-color: var(--color-secondary);
+#ressentiPage {
+    background: url(../assets/bgAppris.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+#contactPage {
+    background: url(../assets/bgContact.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
 }
 
 /* NAV */
@@ -314,10 +323,6 @@ footer {
         height: auto;
         max-width: 300px;
         max-height: 200px;
-    }
-
-    .btnRetour {
-        margin: 0;
     }
 
     /* NAV */
