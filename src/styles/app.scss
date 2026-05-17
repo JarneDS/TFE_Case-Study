@@ -251,13 +251,13 @@ header {
     color: var(--color-text-btn);
 }
 
-.sideNav:hover a:hover .sideNav__txt {
+.sideNav:hover a:hover .sideNav__txt,
+.sideNav:hover a:hover .sideNav__num,
+.sideNav a.active .sideNav__txt,
+.sideNav a.active .sideNav__num {
     color: var(--color-text);
 }
 
-.sideNav:hover a:hover .sideNav__num {
-    color: var(--color-text);
-}
 
 
 @media (min-width: 701px) {
