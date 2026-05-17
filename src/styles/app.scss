@@ -30,10 +30,12 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 section {
     padding: 30px;
+    scroll-margin-top: 50px;
 }
 
 .section__btnRetour, .accueil {
@@ -203,58 +205,66 @@ header {
 
 /* SIDENAV */
 .sideNav {
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    right: 0;
+    right: 0px;
     top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    background: var(--color-primary);
-    padding: 10px 0;
-    overflow: hidden;
-    transition: width .3s ease-in-out;
-    z-index: 100;
+    transform: translate(83%, -50%);
+    transition: all 0.7s;
+    z-index: 10;
+    background-color: var(--color-primary);
+    padding: 10px;
     border-radius: 5px 0 0 5px;
+    overflow: hidden;
 }
 
 .sideNav:hover {
-    width: 210px;
+    transform: translate(0%, -50%);
 }
 
-.sideNav__ol {
-    list-style: decimal;
-    padding-left: 20px;
+.sideNav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text-btn);
+    background-color: var(--color-primary);
+    transition: all 0.3s;
+    white-space: nowrap;
     margin: 0;
 }
 
-.sideNav:hover .sideNav__ol {
-    padding-left: 41px;
+.sideNav a .sideNav__num {
+    width: 25px;
+    text-align: right;
+    transition: all 0.3s;
 }
 
-.sideNav__ol li {
-    white-space: nowrap;
+.sideNav a .sideNav__txt {
     color: transparent;
-    transition: color .3s ease, transform .3s ease;
-    transform: translateX(20px);
-    cursor: pointer;
+    transition: color .3s ease;
 }
 
-.sideNav__ol a {
+.sideNav:hover a .sideNav__txt {
     color: var(--color-text-btn);
 }
 
-.sideNav__ol li::marker {
-    color: var(--color-text-btn);
+.sideNav:hover a:hover .sideNav__txt {
+    color: var(--color-text);
 }
 
-.sideNav:hover .sideNav__ol li {
-    color: var(--color-text-btn);
-    transform: translateX(0);
+.sideNav:hover a:hover .sideNav__num {
+    color: var(--color-text);
 }
+
 
 @media (min-width: 701px) {
     section {
         margin-top: 70px;
         padding: 40px;
+        scroll-margin-top: 70px;
     }
 
     img {
