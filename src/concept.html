@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Page concept - TFE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="TFE De Scheerder Jarne">
+    <meta property="og:title" content="Les secrets de la voiture">
+    <meta property="og:description" content="TFE De Scheerder Jarne">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jarnedescheerder.be/projets/tfe">
+    <meta property="og:image" content="https://jarnedescheerder.be/projets/tfe/public/favico.ico">
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/styles/app.scss">
+    <script type="module" src="scripts/app.js" defer></script>
+</head>
+<body id="accueil">
+    <nav class="menu">
+        <img src="logo.webp" alt="logo de Les secrets de la voiture" class="menu__img">
+        <button class="menu__btn NAV">Menu</button>
+        <ul class="menu__ul">
+            <li class="menu__li"><a href="https://jarnedescheerder.be/projets/TFE" class="NAV">L'application</a></li>
+            <li class="menu__li"><a href="#" class="NAV">Contexte</a></li>
+            <li class="menu__li"><a href="credits.html" class="NAV">Crédits</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="header.webp" alt="Image d'un garage de mécanicien automobile" class="header__img">
+        <h1 class="header__h1">Pourquoi une application sur la mécanique automobile ?</h1>
+        <div class="header__scroll">
+            <div class="headerScroll__img">
+                <img src="scrollTire.webp" alt="Un dessin vectoriel d'une roue de voiture" class="scrollTire">
+                <img src="scrollArrow.webp" alt="Une flèche" class="scrollArrow">
+            </div>
+            <p><span>Scroll vers le bas</span></p>
+        </div>
+    </header>
+    <section class="sideNav">
+        <a href="#concept"><span class="sideNav__num">1.</span><span class="sideNav__txt">Concept initial</span></a>
+        <a href="#pourquoi"><span class="sideNav__num">2.</span><span class="sideNav__txt">Pourquoi ?</span></a>
+        <a href="#prototype"><span class="sideNav__num">3.</span><span class="sideNav__txt">Prototypage</span></a>
+        <a href="#developpement"><span class="sideNav__num">4.</span><span class="sideNav__txt">Développement</span></a>
+        <a href="#technologies"><span class="sideNav__num">5.</span><span class="sideNav__txt">Technologies</span></a>
+    </section>
+    <section id="concept">
+        <h2>Concept initial du&nbsp;projet</h2>
+        <img src="concept.webp" alt="1992 Volkswagen Golf GTI Mk2 by Ddiaz Design with interactif points">
+        <p><span>La mécanique automobile, un domaine qui me passionne depuis&nbsp;longtemps.</span><span>À la base, je voulais créer un garage virtuel interactif avec un modèle 3D de voiture en&nbsp;Three.js.</span><span>L’idée était d’avoir&nbsp;:</span></p>
+        <ul>
+            <li>une caméra en 2.5D,</li>
+            <li>des points interactifs sur la voiture,</li>
+            <li>chaque point menant à une mini‑expérience en 2D pour expliquer un&nbsp;composant.</li>
+        </ul>
+        <p><span>Ce concept était ambitieux, mais trop lourd pour le temps&nbsp;disponible.</span><span>J’ai donc recentré le projet sur une version plus simple, plus pédagogique et plus réaliste&nbsp;techniquement.</span></p>
+    </section>
+    <section id="pourquoi">
+        <h2>Pourquoi la mécanique automobile ?</h2>
+        <img src="pourquoi.webp" alt="Icone représentant un livre sur un serre-livres">
+        <p><span>Parce que c’est un domaine qui me passionne depuis&nbsp;toujours.</span><span>À travers ce projet, je&nbsp;voulais&nbsp;:</span></p>
+        <ul>
+            <li>approfondir mes propres connaissances,</li>
+            <li>vulgariser un sujet souvent perçu comme complexe,</li>
+            <li>aider les gens à comprendre et entretenir leur&nbsp;véhicule,</li>
+            <li>et rendre la mécanique plus accessible.</li>
+        </ul>
+    </section>
+    <section id="prototype">
+        <h2>Le prototypage du projet</h2>
+        <div>
+            <img src="image2_proto.webp" alt="Capture d'écran de la page freins de mes tests de design pour l'application">
+            <img src="image3_proto.webp" alt="Capture d'écran de la page moteur de mes tests de design pour l'application">
+            <img src="image4_proto.webp" alt="Capture d'écran de la page diagnostiques de mes tests de design pour l'application">
+        </div>
+        <p><span>Dès le début, j’avais une idée assez précise de l’interface que je voulais créer. Le défi était de transformer cette vision en un prototype concret sur Figma. Les premières étapes ont été compliquées : je faisais un pas en avant, puis presque autant en&nbsp;arrière.</span><span>Le principal problème venait de la quantité de texte théorique que j’avais intégrée. Ces informations étaient longues, peu engageantes et, surtout, parfois inutiles pour un utilisateur&nbsp;débutant.</span><span>Pour améliorer cela, j’ai recentré le contenu sur l’essentiel. Par exemple, j’avais initialement prévu d’expliquer des parties du véhicule sur lesquelles un débutant ne peut de toute façon rien faire lui-même. Cela allait à l’encontre du concept de mon projet, qui vise à rendre la mécanique accessible. J’ai donc simplifié, épuré et recentré le design sur des informations utiles, claires et&nbsp;actionnables.</span></p>
+    </section>
+    <section id="developpement">
+        <h2>Le développement de l’application</h2>
+        <img src="vite.webp" alt="Logo de Vitejs">
+        <p><span>Pour le développement, j’ai choisi d’utiliser <a href="">Vite</a>, principalement pour sa rapidité et sa simplicité d’utilisation. Cet outil m’a permis de travailler efficacement sans perdre de temps sur la&nbsp;configuration.</span><span>Concernant la gestion des véhicules, nous avons décidé — avec mon professeur — d’utiliser un stockage local via le navigateur. L’utilisation d’une base de données et d’un système de comptes n’apportait pas de valeur ajoutée à ce stade du projet. Le localStorage était donc la solution la plus logique, simple et&nbsp;adaptée.</span></p>
+        <img src="js.webp" alt="Logo de JavaScript">
+        <p><span>Durant le développement, j’ai rencontré plusieurs difficultés, notamment liées à l’affichage conditionnel des informations. Beaucoup d’éléments étaient cachés par défaut et devaient apparaître uniquement lorsqu’un bouton était cliqué. Heureusement, mon expérience de stage, où j’avais dû réaliser un système similaire en TypeScript, m’a beaucoup aidé. J’ai pu transposer cette logique en JavaScript et résoudre rapidement ces&nbsp;problèmes.</span></p>
+    </section>
+    <section id="technologies">
+        <h2>Technologies utilisées</h2>
+        <div>
+            <img src="html.webp" alt="Logo de HTML 5">
+            <img src="sass.webp" alt="Logo de SASS">
+            <img src="js.webp" alt="Logo de JavaScript">
+        </div>
+        <p><span>Le projet final utilise&nbsp;:</span></p>
+        <ul>
+            <li>HTML</li>
+            <li>SCSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <p><span>Ces technologies m’ont permis de créer une interface claire, responsive et facile à&nbsp;maintenir.</span></p>
+    </section>
+    <footer>
+        <img src="logo.webp" alt="logo de Les secrets de la voiture">
+        <ul>
+            <li><a href="https://jarnedescheerder.be/projets/TFE" class="NAV">L'application</a></li>
+            <li><a href="#" class="NAV active">Contexte</a></li>
+            <li><a href="credits.html" class="NAV">Crédits</a></li>
+        </ul>
+        <p><span class="copyright">©2026 – Jarne De Scheerder – TFE</span></p>
+    </footer>
+</body>
+</html>
