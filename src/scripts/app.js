@@ -11,15 +11,20 @@ function toggleMenu() {
 
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".sideNav a");
+const navLinksIndex = document.querySelectorAll(".sideNavIndex a");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const id = entry.target.getAttribute("id");
         const link = document.querySelector(`.sideNav a[href="#${id}"]`);
+        const linkIndex = document.querySelector(`.sideNavIndex a[href="#${id}"]`);
 
         if (entry.isIntersecting) {
             navLinks.forEach(a => a.classList.remove("active"));
-            link.classList.add("active");
+            navLinksIndex.forEach(a => a.classList.remove("active"));
+
+            if (link) link.classList.add("active");
+            if (linkIndex) linkIndex.classList.add("active");
         }
     });
 }, {
