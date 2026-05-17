@@ -194,7 +194,7 @@ header {
     min-width: 100%;
     min-height: 100vh;
     object-fit: cover;
-    filter: brightness(50%) saturate(0);
+    filter: brightness(50%) /*saturate(0)*/;
 }
 
 .header__h1 {
@@ -230,62 +230,9 @@ header {
     height: 50px;
 }
 
-/* SIDENAV */
 .sideNav {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 0px;
-    top: 50%;
-    transform: translate(83%, -50%);
-    transition: all 0.7s;
-    z-index: 10;
-    background-color: var(--color-primary);
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-    overflow: hidden;
+    display: none;
 }
-
-.sideNav:hover {
-    transform: translate(0%, -50%);
-}
-
-.sideNav a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-text-btn);
-    background-color: var(--color-primary);
-    transition: all 0.3s;
-    white-space: nowrap;
-    margin: 0;
-}
-
-.sideNav a .sideNav__num {
-    width: 25px;
-    text-align: right;
-    transition: all 0.3s;
-}
-
-.sideNav a .sideNav__txt {
-    color: transparent;
-    transition: color .3s ease;
-}
-
-.sideNav:hover a .sideNav__txt {
-    color: var(--color-text-btn);
-}
-
-.sideNav:hover a:hover .sideNav__txt,
-.sideNav:hover a:hover .sideNav__num,
-.sideNav a.active .sideNav__txt,
-.sideNav a.active .sideNav__num {
-    color: var(--color-text);
-}
-
-
 
 @media (min-width: 701px) {
     section {
@@ -326,6 +273,61 @@ header {
         position: static;
         width: fit-content;
         transform: translateX(0);
+    }
+
+    /* SIDENAV */
+    .sideNav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0px;
+        top: 50%;
+        transform: translate(83%, -50%);
+        transition: all 0.7s;
+        z-index: 10;
+        background-color: var(--color-primary);
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        overflow: hidden;
+    }
+
+    .sideNav:hover {
+        transform: translate(0%, -50%);
+    }
+
+    .sideNav a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--color-text-btn);
+        background-color: var(--color-primary);
+        transition: all 0.3s;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .sideNav a .sideNav__num {
+        width: 25px;
+        text-align: right;
+        transition: all 0.3s;
+    }
+
+    .sideNav a .sideNav__txt {
+        color: transparent;
+        transition: color .3s ease;
+    }
+
+    .sideNav:hover a .sideNav__txt {
+        color: var(--color-text-btn);
+    }
+
+    .sideNav:hover a:hover .sideNav__txt,
+    .sideNav:hover a:hover .sideNav__num,
+    .sideNav a.active .sideNav__txt,
+    .sideNav a.active .sideNav__num {
+        color: var(--color-text);
     }
 
     .row--center {
