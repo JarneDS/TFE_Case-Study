@@ -398,6 +398,36 @@ footer {
         color: var(--color-text);
     }
 
+    /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0 20px;
+        align-items: center;
+        padding: 40px 40px 0;
+    }
+
+    .footer__img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    .footer__ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin: 0;
+        grid-column: 2 / 8;
+        grid-row: 1 / 2;
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        justify-self: center;
+    }
+
     .row--center {
         align-self: center;
     }
