@@ -11,8 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'src/index.html'),
-        concept: resolve(__dirname, 'src/concept.html'),
-        ressenti: resolve(__dirname, 'src/ressenti.html'),
+        histoire: resolve(__dirname, 'src/histoire.html'),
         contact: resolve(__dirname, 'src/contact.html'),
         credits: resolve(__dirname, 'src/credits.html')
       }
