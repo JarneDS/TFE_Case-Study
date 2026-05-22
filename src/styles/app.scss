@@ -20,7 +20,8 @@
 
 :root {
   --color-bg: #f1f1f1;
-  --color-text: #f1f1f1;
+  --color-NavFooter: #FFFFFF;
+  --color-text: #000000;
   --color-text-btn: #000;
   --color-primary: #FF7F00;
   --color-secondary: rgba(255, 128, 0, 0.6);
@@ -31,6 +32,8 @@ html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 section {
@@ -94,42 +97,6 @@ ul {
     list-style-type: disc;
 }
 
-#accueilPage, #credits {
-    background: url(../assets/bg.webp);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-}
-
-#conceptPage {
-    background: url(../assets/bgConcept.webp);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-}
-
-#ressentiPage {
-    background: url(../assets/bgAppris.webp);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-}
-
-#contactPage {
-    background: url(../assets/bgContact.webp);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-}
-
 .section__btnRetour {
     margin-top: 50px;
 }
@@ -151,7 +118,7 @@ ul {
 
 /* NAV */
 .menu {
-    background-color: var(--color-bg);
+    background-color: var(--color-NavFooter);
     height: 50px;
     display: flex;
     align-items: center;
@@ -180,7 +147,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: var(--color-bg);
+    background-color: var(--color-NavFooter);
     list-style: none;
     padding: 30px 0 0;
     margin: 0;
@@ -302,7 +269,7 @@ header {
 
 /* FOOTER */
 footer {
-    background-color: var(--color-bg);
+    background-color: var(--color-NavFooter);
     display: flex;
     flex-direction: column;
     align-items: center;
