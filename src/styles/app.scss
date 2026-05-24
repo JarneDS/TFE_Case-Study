@@ -293,7 +293,7 @@ header h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--color-primary) solid var(--color-thirdly);
+    border: 2px solid var(--color-thirdly);
     border-radius: 5px;
     padding: 26px 20px 0;
     margin-bottom: 20px;
@@ -333,7 +333,7 @@ header h2 {
     background-color: var(--color-NavFooter);
     min-width: 300px;
     padding: 20px;
-    border: 2px solid var(--color-primary) solid var(--color-primary);
+    border: 2px solid var(--color-primary);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -492,6 +492,7 @@ footer a {
 
     .menu__elements {
         flex-direction: row;
+        height: 70px;
         gap: 40px;
         padding: 0 0 0 50px;
         position: static;
