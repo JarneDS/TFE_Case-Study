@@ -73,7 +73,7 @@ h3, .h3 {
     color: var(--color-text);
 }
 
-p, button, a, ul, ol {
+p, button, a, ul, ol, ::placeholder {
     color: var(--color-text);
     margin: 13px 0;
     font-size: clamp(1rem, 0.123vw + 0.977rem, 1.125rem);
@@ -82,6 +82,13 @@ p, button, a, ul, ol {
 
 p, span, ul, ol {
     max-width: 700px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0, .5);
+    margin: 13px 0;
+    font-size: clamp(1rem, 0.123vw + 0.977rem, 1.125rem);
+    font-family: "TitilliumWeb-SemiBold";
 }
 
 span {
@@ -112,10 +119,9 @@ ul {
     list-style-type: disc;
 }
 
-.section__btnRetour {
+.section__btnRetour, .contact {
     margin-top: 50px;
 }
-
 
 .btnRetour {
     background-color: var(--color-primary);
@@ -169,7 +175,7 @@ ul {
     top: 50px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     transform: translateX(100%);
     transition: transform .3s ease-in-out;
     align-items: center;
@@ -287,7 +293,7 @@ header h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--color-thirdly);
+    border: 2px solid var(--color-primary) solid var(--color-thirdly);
     border-radius: 5px;
     padding: 26px 20px 0;
     margin-bottom: 20px;
@@ -327,7 +333,7 @@ header h2 {
     background-color: var(--color-NavFooter);
     min-width: 300px;
     padding: 20px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-primary) solid var(--color-primary);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -366,6 +372,53 @@ header h2 {
 
 #decouvre a {
     align-self: center;
+}
+
+/* CONTACT */
+.contactForm__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm__element input {
+    padding: 13px;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 350px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.envoyer {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    padding: 13px 0;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.contact a {
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: var(--color-thirdly);
+}
+
+.contact__img {
+    border-radius: 5px;
+    margin-top: 17px;
 }
 
 /* FOOTER */
@@ -546,6 +599,13 @@ footer a {
         margin: 2.5%;
     }
 
+    .contactLiens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
     /* FOOTER */
     footer {
         display: grid;
@@ -684,5 +744,16 @@ footer a {
 
     .commentaire__card {
         min-width: 521px;
+    }
+
+    .contact__img {
+        max-width: 374px;
+        max-height: 374px;
+    }
+
+    .contactLiens {
+        width: 374px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

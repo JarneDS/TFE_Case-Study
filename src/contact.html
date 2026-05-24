@@ -32,9 +32,9 @@
             <a href="https://jarnedescheerder.be/projets/TFE/" class="decouvrir NAV">Découvrir&nbsp;l’application</a>
         </div>
     </nav>
-    <section>
-        <h1>Contactez-moi</h1>
-        <form action="" method="get" class="contact__form">
+    <section class="contact">
+        <h1 class="col--left row--title">Contactez-moi</h1>
+        <form action="" method="get" class="contact__form col--left row--double">
             <div class="contactForm__element">
                 <label for="Nom" class="h3">Nom:*</label>
                 <input type="text" name="Nom" id="Nom" placeholder="Nom" required>
@@ -45,23 +45,25 @@
             </div>
             <div class="contactForm__element">
                 <label for="Mail" class="h3">Adresse mail:*</label>
-                <input type="text" name="Mail" id="Mail" placeholder="Adresse mail" required>
+                <input type="email" name="Mail" id="Mail" placeholder="Adresse mail" required>
             </div>
             <div class="contactForm__element">
                 <label for="Message" class="h3">Message:</label>
-                <input type="text" name="Message" id="Message" placeholder="Message optionnel">
+                <textarea name="Message" id="Message" placeholder="Message optionnel"></textarea>
             </div>
-            <button type="submit">Envoyer</button>
+            <button type="submit" class="envoyer NAV">Envoyer</button>
         </form>
-        <div>
-            <h3>Questions généraux</h3>
-            <p><span>lesSecretsDeLaVoiture.questions@gmail.com</span></p>
-            <p><span>+32 489 56 57 98</span></p>
-            <h3>Rejoindre l’équipe</h3>
-            <p><span>lesSecretsDeLaVoiture.join@gmail.com</span></p>
-            <p><span>+32 492 79 85 00</span></p>
+        <div class="contactLiens col__img--right row--top col--end">
+            <div>
+                <h3>Questions généraux</h3>
+                <p><span><a href="mailto:lesSecretsDeLaVoiture.questions@gmail.com">lesSecretsDeLaVoiture.questions@gmail.com</a></span></p>
+                <p><span><a href="tel:0032489565798">+32 489 56 57 98</a></span></p>
+                <h3>Rejoindre l’équipe</h3>
+                <p><span><a href="mailto:lesSecretsDeLaVoiture.join@gmail.com">lesSecretsDeLaVoiture.join@gmail.com</a></span></p>
+                <p><span><a href="tel:0032492798500">+32 492 79 85 00</a></span></p>
+            </div>
+            <img src="contactImg.webp" alt="Image représentant quelqu'un qui rempli le moteur d'huile." class="contact__img">
         </div>
-        <img src="contactImg.webp" alt="Image représentant quelqu'un qui rempli le moteur d'huile.">
     </section>
     <footer>
         <img src="logo.png" alt="logo de Les secrets de la voiture" class="footer__img">
