@@ -18,6 +18,16 @@
        url('../fonts/TitilliumWeb-SemiBold.svg#FontName') format('svg');
 }
 
+@font-face {
+  font-family: 'TitilliumWeb-Bold';
+  src: url('../fonts/TitilliumWeb-Bold.eot');
+  src: url('../fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/TitilliumWeb-Bold.woff2') format('woff2'),
+       url('../fonts/TitilliumWeb-Bold.woff') format('woff'),
+       url('../fonts/TitilliumWeb-Bold.ttf')  format('truetype'),
+       url('../fonts/TitilliumWeb-Bold.svg#FontName') format('svg');
+}
+
 :root {
   --color-bg: #f1f1f1;
   --color-NavFooter: #FFFFFF;
@@ -26,7 +36,7 @@
   --color-primary: #FF7F00;
   --color-secondary: rgba(255, 128, 0, 0.6);
   --color-thirdly: #4A0000;
-  --colo-bgSection: #E1E1E1;
+  --color-bgSection: #E1E1E1;
 }
 
 html, body {
@@ -79,6 +89,10 @@ span {
     margin: 13px 0;
 }
 
+b, strong {
+    font-family: "TitilliumWeb-Bold";
+}
+
 .NAV, h4 {
     font-size: clamp(1.188rem, 0.185vw + 1.153rem, 1.375rem);
     font-family: "TitilliumWeb-SemiBold" !important;
@@ -111,6 +125,7 @@ ul {
     padding: 10px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    width: fit-content;
 }
 
 .btnRetour:hover {
@@ -211,6 +226,10 @@ header {
     flex-direction: column;
 }
 
+#intro {
+    margin: 96px 0 0;
+}
+
 header .decouvrir {
     align-self: center;
 }
@@ -255,8 +274,12 @@ header h2 {
 }
 
 /* pourquoi */
-.pourquoi {
-    background-color: var(--colo-bgSection);
+.pourquoi, #problemes, #appris, #developpement, #concept, #infos {
+    background-color: var(--color-bgSection);
+}
+
+#problemes {
+    margin-bottom: -28px;
 }
 
 /* ajoutApp */
@@ -371,6 +394,7 @@ footer {
 footer a {
     color: var(--color-text-btn);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .copyright {
@@ -382,6 +406,10 @@ footer a {
         margin-top: 70px;
         padding: 40px;
         scroll-margin-top: 70px;
+    }
+
+    .credits {
+        margin-top: 0;
     }
 
     img {
@@ -562,6 +590,11 @@ footer a {
         margin-bottom: 0;
     }
 
+    #technologies img {
+        max-height: 120px;
+        margin-left: 20px;
+    }
+
     /* GRID */
     .col--full {
         grid-column: 2 / 7;
@@ -593,6 +626,10 @@ footer a {
 
     .row--double {
         grid-row: 2 / 4;
+    }
+
+    .row--triple {
+        grid-row: 2 / 5;
     }
 
     .col--center {
