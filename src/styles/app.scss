@@ -119,23 +119,8 @@ ul {
     list-style-type: disc;
 }
 
-.section__btnRetour, .contact {
+.credits, .contact {
     margin-top: 50px;
-}
-
-.btnRetour {
-    background-color: var(--color-primary);
-    color: var(--color-text-btn);
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    width: fit-content;
-}
-
-.btnRetour:hover {
-    background-color: var(--color-secondary);
 }
 
 /* NAV */
@@ -461,19 +446,11 @@ footer a {
         scroll-margin-top: 70px;
     }
 
-    .credits {
-        margin-top: 0;
-    }
-
     img {
         width: auto;
         height: auto;
         max-width: 300px;
         max-height: 200px;
-    }
-
-    .btnRetour {
-        margin: 0;
     }
 
     /* NAV */
