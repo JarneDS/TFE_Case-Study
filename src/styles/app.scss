@@ -451,37 +451,23 @@ footer a {
         display: flex;
         flex-direction: column;
         position: fixed;
-        right: 0px;
-        top: 50%;
-        transform: translate(75%, -50%);
-        transition: all 0.7s;
-        z-index: 10;
-        background-color: var(--color-primary);
-        padding: 10px;
-        border-radius: 5px 0 0 5px;
-        overflow: hidden;
-    }
-
-    .sideNavIndex {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
+        z-index: 1600;
         right: 0px;
         top: 50%;
         transform: translate(80%, -50%);
         transition: all 0.7s;
-        z-index: 10;
         background-color: var(--color-primary);
         padding: 10px;
         border-radius: 5px 0 0 5px;
         overflow: hidden;
+        margin: 0;
     }
 
-    .sideNav:hover, .sideNavIndex:hover {
+    .sideNav:hover {
         transform: translate(0%, -50%);
     }
 
-    .sideNav a, .sideNavIndex a {
+    .sideNav a {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -494,30 +480,26 @@ footer a {
         margin: 0;
     }
 
-    .sideNav a .sideNav__num, .sideNavIndex a .sideNav__num {
+    .sideNav a .sideNav__num {
         width: 25px;
         text-align: right;
         transition: all 0.3s;
     }
 
-    .sideNav a .sideNav__txt, .sideNavIndex a .sideNav__txt {
+    .sideNav a .sideNav__txt {
         color: transparent;
         transition: color .3s ease;
     }
 
-    .sideNav:hover a .sideNav__txt, .sideNavIndex:hover a .sideNav__txt {
-        color: var(--color-text-btn);
+    .sideNav:hover a .sideNav__txt {
+        color: var(--color-text);
     }
 
     .sideNav:hover a:hover .sideNav__txt,
     .sideNav:hover a:hover .sideNav__num,
     .sideNav a.active .sideNav__txt,
-    .sideNav a.active .sideNav__num,
-    .sideNavIndex:hover a:hover .sideNav__txt,
-    .sideNavIndex:hover a:hover .sideNav__num,
-    .sideNavIndex a.active .sideNav__txt,
-    .sideNavIndex a.active .sideNav__num {
-        color: var(--color-text);
+    .sideNav a.active .sideNav__num {
+        color: var(--color-bg);
     }
 
     /* HEADER */
