@@ -360,6 +360,11 @@ header h2 {
 }
 
 /* CONTACT */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
 .contactForm__element {
     display: flex;
     flex-direction: column;
@@ -386,9 +391,15 @@ textarea {
     background-color: var(--color-primary);
     border: none;
     border-radius: 5px;
-    padding: 13px 0;
+    padding: 8px 0;
     width: 100%;
     margin-top: 35px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.envoyer:hover {
+    background-color: var(--color-secondary);
 }
 
 .contact a {
@@ -733,5 +744,11 @@ footer a {
         width: 374px;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .envoyer {
+        padding: 8px 50px;
+        width: fit-content;
+        align-self: center;
     }
 }
