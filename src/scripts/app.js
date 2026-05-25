@@ -1,5 +1,47 @@
 "use strict";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+/* GSAP */
+function initGSAPAnimations() {
+    document.querySelectorAll(".col__img--left, .col--left").forEach(el => {
+        gsap.from(el, {
+            scrollTrigger: {
+                trigger: el,
+                start: "top 90%",
+            },
+            xPercent: -100,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            clearProps: "transform"
+        });
+    });
+
+    document.querySelectorAll(".col__img--right, .col--right").forEach(el => {
+        gsap.from(el, {
+            scrollTrigger: {
+                trigger: el,
+                start: "top 90%",
+            },
+            xPercent: 100,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            clearProps: "transform"
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    initGSAPAnimations();
+});
+
+/* MENU */
+
 var menuBtn = document.querySelector(".menu__btn");
 
 menuBtn.addEventListener("click", toggleMenu);
