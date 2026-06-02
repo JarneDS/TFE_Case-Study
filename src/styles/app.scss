@@ -109,7 +109,9 @@ b, strong {
 }
 
 img {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-self: center;
 }
 
 ul, ol {
@@ -696,6 +698,10 @@ footer a {
 
     .col--end {
         justify-self: end;
+    }
+
+    .col--start {
+        justify-self: start;
     }
 
     /* GRID SPECIAL */
